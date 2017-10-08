@@ -9,13 +9,11 @@
 * Linear regression with multiple variables
   * Feature Normalization
   * Gradient Descent 
-  * Normal Equations 
+
 
 # Linear regression with single variables 
 ## Problems Statement 
 Implement a linear regression with one variable to predict profits for a food truck. The food truck has data for profits and populations for variaous cities. The analysis help select which city to expand to next. 
-
-
 
 ## Implementation
 ### Plotting the Data
@@ -42,6 +40,7 @@ The plotting cost over a 2D grid of two linear regression parameters shows gradi
 
 ![](https://user-images.githubusercontent.com/26426412/31313797-ad651898-aba2-11e7-91f5-ccada265de32.png)
 
+
 # Linear regression with multiple variables 
 ## Problems Statement 
 Make a model of housing prices to predict market price. The training dataset contains housing prices in Portland, Oregon. The first column is the size of the house (in square feet), the second column is the number of bedrooms, and the third column is the price of the house.
@@ -49,7 +48,9 @@ Make a model of housing prices to predict market price. The training dataset con
 ## Implementation
 ### Feature Normalization
 Because features(size of housr, number of bedrooms) differ by orders of magnitude, the code in **featureNormalize.m** performs a feature scaling. 
+
 ### Gradient Descient
+In the multivariate case, the cost function is written in vectorized form shown below.
 
+![](https://user-images.githubusercontent.com/26426412/31313922-7e3e3db6-aba6-11e7-90af-58f19fafe9df.png)
 
-## Installation 
