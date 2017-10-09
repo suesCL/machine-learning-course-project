@@ -84,6 +84,7 @@ Plotting the decision boundary helps visualize the model learned by the classifi
 
 ![](https://user-images.githubusercontent.com/26426412/31360122-cab9c06e-ad01-11e7-9b11-a7178a043b0a.png)
 
-
+## Reference
+Ng, A. (n.d.). *Programming Exercise 2: Logistic Regression* [PDF].
 
 
