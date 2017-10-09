@@ -51,7 +51,6 @@ end
 The file **ex3_nn** will compute the predicted value for the samples and display the accuracy about 97.5%. An interactive sequence will display images from training samples one at a time while console prints the predicted value for the displayed image. 
 
 ## Reference
-Programming Exercise 3:
-Multi-class Classication and Neural Networks
+Ng, A. (n.d.). Programming Exercise 3: Multi-class Classification and Neural Networks [PDF].
 
 
