@@ -81,6 +81,7 @@ The code uses **fminunc** to learn the optimal parameter theta.
 * **Plotting the decision boundary:**
 
 Plotting the decision boundary helps visualize the model learned by the classifier. The decision bounday seperates positve and negative samples. The file **plotDecisionBoundary.m** plots the decision boundary by first computing predictions and then drawing a contour plot of where predictions change from y=0 to y=1. The figure shown below displays decision boundary where lambda = 1.
+
 ![](https://user-images.githubusercontent.com/26426412/31360122-cab9c06e-ad01-11e7-9b11-a7178a043b0a.png)
 
 
