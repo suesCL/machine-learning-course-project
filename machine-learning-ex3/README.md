@@ -15,13 +15,14 @@ because it can represent complex models based on non-linear hypothesis. The code
 ### Implementation 
 The script **ex3_nn.** steps through the neural network algorithm in predicting handwritten digits.
 * **Model representation:** 
+
 The first step in using neural netowrk for training data is to select appropriate model representation. This project
 utilized a neural network with three layers - an input layer, a hidden layer and an output layer. Since the input image
 is of size 20 * 20, this gives an input layer with 400 units(excluding one extra bias unit). The hidden layer has 25 units and output layer has 10 units which correspond to 10 digit classes as shown below. The network parameters have dimensions  25 * 401 and 10 * 26 respectively.
 
 ![image](https://user-images.githubusercontent.com/26426412/31361130-a0aa8312-ad06-11e7-8ead-3e7c2be2b888.png)
 
-* **Feedforward Propagation and Prediction** 
+* **Feedforward Propagation and Prediction:** 
 
 Feedforward propagation computes predicted value h(xi) for each sample *i*. The code in **predict.m** demonstrates feedforward propagation.
 ```
@@ -46,3 +47,11 @@ a3 = sigmoid( transpose(a2)*transpose(Theta2));
 
 end
 ```
+
+The file **ex3_nn** will compute the predicted value for the samples and display the accuracy about 97.5%. An interactive sequence will display images from training samples one at a time while console prints the predicted value for the displayed image. 
+
+## Reference
+Programming Exercise 3:
+Multi-class Classication and Neural Networks
+
+
