@@ -1,4 +1,4 @@
-# Neural Neural Network Learning
+# Neural Neural Network Learning for Hand-written Digits Recognition
 
 ## Overview 
 * Regularized cost function
@@ -29,5 +29,12 @@ K is the total number of possible lables. K equals to 10 in our case. m is the n
 
 ## Backpropagation 
 Backpropagation algorithm computes the gradient for the neural network cost function. With the gradient, the program can compute the model parameters using advanced optimizer fmincg by minimizing cost function J(theta). 
+
+* **Step One: Random Initialization**
+Randomly initialize parameters theta is to break symmetry. The program randomly selected values for theta uniformly in [-0.12, 0.12].
+
+
+
+
 
 * **Sigmoid gradient:**
