@@ -5,6 +5,7 @@ The project contains common machine learning algorithms and its application to s
 * Linear regression 
 * Logistic classificaion
 * Neural network
+  * Hand-written digit recognition
 * Methods on model validation and visualization
 
 ## How to Install
