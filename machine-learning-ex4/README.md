@@ -36,13 +36,22 @@ Randomly initialize parameters theta is to break symmetry. The program randomly 
 * **Step Two: Backpropagation**
 
 ![image](https://user-images.githubusercontent.com/26426412/33496897-c62a3832-d680-11e7-9dfc-3781185fab4f.png)
+
 The backpropagation follows the process below.
 1) Given the training examle, run a forwardpropagation to compute activators a and output valie h(x). 
 2) For each node j in layer l, compute error term ![image](https://user-images.githubusercontent.com/26426412/33497101-873eaee0-d681-11e7-89b8-9a71c78dad45.png). Error term measures how much error that node contributes for the errors in output. 
 The error term of output layer is the difference between activator and true value. The error term
 in hidden layers is measured based on weighted average of error terms of the nodes from layer (l+1). Because each layer is calculated  from next layer, we describe the process backpropagation.
-3) Calculate the gradient as followed. 
+3) Calculate the accumulated gradient of each layer as followed. 
 ![image](https://user-images.githubusercontent.com/26426412/33497372-985997ac-d682-11e7-89c0-2a9fc8cf7bfb.png)
+4) Obtain unregularized gradient for cost function by dividing the accumulated gradient by m.
+![image](https://user-images.githubusercontent.com/26426412/33497599-54e5f000-d683-11e7-8422-e31ea0a5df5e.png)
+
+* **Step Three: Gradient checking**
+Gradient checking validates the correctness of backpropagation implementation. Gradient checking compares the numerically cacluated gradient with backpropagation calculated gradient.
+![image](https://user-images.githubusercontent.com/26426412/33497865-3b3ff2b2-d684-11e7-8097-692aac5b3dd5.png)
+
+
 
 
 * **Sigmoid gradient:**
