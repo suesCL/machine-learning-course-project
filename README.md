@@ -3,7 +3,6 @@ The project contains common machine learning algorithms and its application to s
 
 ## Machine Learning Algorithms Overview
 * Linear regression 
-* Logistic regression
 * Logistic classificaion
 * Neural network
 * Methods on model validation and visualization
