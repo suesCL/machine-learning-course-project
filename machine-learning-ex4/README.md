@@ -3,7 +3,6 @@
 ## Overview 
 * Regularized cost function
 * Backpropagation
-  * Sigmoid gradient 
   * Random initialization
   * Backpropagation
 * Visualizing the hidden layer 
@@ -44,14 +43,16 @@ The error term of output layer is the difference between activator and true valu
 in hidden layers is measured based on weighted average of error terms of the nodes from layer (l+1). Because each layer is calculated  from next layer, we describe the process backpropagation.
 3) Calculate the accumulated gradient of each layer as followed. 
 ![image](https://user-images.githubusercontent.com/26426412/33497372-985997ac-d682-11e7-89c0-2a9fc8cf7bfb.png)
-4) Obtain unregularized gradient for cost function by dividing the accumulated gradient by m.
+4) Obtain unregularized gradient for cost function by dividing the accumulated gradient by m. 
 ![image](https://user-images.githubusercontent.com/26426412/33497599-54e5f000-d683-11e7-8422-e31ea0a5df5e.png)
 
 * **Step Three: Gradient checking**
-Gradient checking validates the correctness of backpropagation implementation. Gradient checking compares the numerically cacluated gradient with backpropagation calculated gradient.
+Gradient checking validates the correctness of backpropagation implementation. Gradient checking compares the numerically cacluated gradient with backpropagation calculated gradient. [!image](https://user-images.githubusercontent.com/26426412/33528020-6f5496c0-d80f-11e7-8b29-b642db96232b.png) is the corresponding vector with the i-th element decreased by a difference epsilon.File **computeNumericalGradient.m** implemented the gradient checking method.
 ![image](https://user-images.githubusercontent.com/26426412/33497865-3b3ff2b2-d684-11e7-8097-692aac5b3dd5.png)
 
+* **Step Four: Add Regularization**
+Adding additional regularization term after computing the gradients with backpropagation prevents overfitting. The first column for each layer of theta are not added regularization term when j = 0. 
+https://user-images.githubusercontent.com/26426412/33528147-def02944-d810-11e7-8930-1d411507efec.png
 
-
-
-* **Sigmoid gradient:**
+## Visualization the hidden layer
+One way to visualize the neural network learning is to visualize the representation captured by the hidden units. File **displayData** shows a 5×5 image corresponding a hidden unit. The hidden unit from the image captures strokes in the input. 
