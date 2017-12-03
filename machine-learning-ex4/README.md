@@ -50,14 +50,16 @@ in hidden layers is measured based on weighted average of error terms of the nod
 * **Step Three: Gradient checking**
 
 
-Gradient checking validates the correctness of backpropagation implementation. Gradient checking compares the numerically cacluated gradient with backpropagation calculated gradient. [!image](https://user-images.githubusercontent.com/26426412/33528020-6f5496c0-d80f-11e7-8b29-b642db96232b.png) is the corresponding vector with the i-th element decreased by a difference epsilon.File **computeNumericalGradient.m** implemented the gradient checking method.
+Gradient checking validates the correctness of backpropagation implementation. Gradient checking compares the numerically cacluated gradient with backpropagation calculated gradient. ![image](https://user-images.githubusercontent.com/26426412/33528020-6f5496c0-d80f-11e7-8b29-b642db96232b.png) in the below equation is the corresponding vector with the i-th element decreased by a difference epsilon. 
 ![image](https://user-images.githubusercontent.com/26426412/33497865-3b3ff2b2-d684-11e7-8097-692aac5b3dd5.png)
+File **computeNumericalGradient.m** implemented the gradient checking method.
+
 
 * **Step Four: Add Regularization**
 
 
 Adding additional regularization term after computing the gradients with backpropagation prevents overfitting. The first column for each layer of theta are not added regularization term when j = 0. 
-https://user-images.githubusercontent.com/26426412/33528147-def02944-d810-11e7-8930-1d411507efec.png
+![image](https://user-images.githubusercontent.com/26426412/33528147-def02944-d810-11e7-8930-1d411507efec.png)
 
 ## Visualization the hidden layer
-One way to visualize the neural network learning is to visualize the representation captured by the hidden units. File **displayData** shows a 5×5 image corresponding a hidden unit. The hidden unit from the image captures strokes in the input. 
+One way to visualize the neural network learning is to visualize the representation captured by the hidden units. File **displayData** shows a 5×5 image corresponding to a hidden unit. The hidden unit from the image captures strokes in the input. 
