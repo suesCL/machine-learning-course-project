@@ -31,6 +31,7 @@ in file **processEmail.m**.
 Feature extraction converts each email into a vector in a n-dimensional vector space. n is the total number of words in vocabulary list. 
 The ith element in the vector corresponds to whether the email contains the i-th element in the vocabulary list. Each email has a feature
 vector shown below. 
+
 ![image](https://user-images.githubusercontent.com/26426412/33528859-ebab8064-d81c-11e7-9ce9-b5b742dc497d.png)
 
 ### Training SVM for spam classification
@@ -38,4 +39,4 @@ Loading the dataset into SVM training model, calculates the training accuracy an
 
 
 # References:
-
+Ng, A. (n.d.). Programming Exercise 6: Support Vector Machines [PDF].
