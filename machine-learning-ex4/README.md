@@ -63,3 +63,6 @@ Adding additional regularization term after computing the gradients with backpro
 
 ## Visualization the hidden layer
 One way to visualize the neural network learning is to visualize the representation captured by the hidden units. File **displayData** shows a 5×5 image corresponding to a hidden unit. The hidden unit from the image captures strokes in the input. 
+
+## Reference
+Ng, A. (n.d.). Programming Exercise 4: Neural Network [PDF].
