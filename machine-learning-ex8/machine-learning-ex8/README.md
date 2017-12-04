@@ -1,13 +1,22 @@
 # Anomaly and Recommendation Systems 
 
 ## Anomaly detection
-The project implements an anomaly detection algorithm to detect anomalous behavior in server computers. I use Gaussian model to detect anomaly. To perform anomaly detection:
+The project implements an anomaly detection algorithm to detect anomalous behavior in server computers. I use Gaussian model to detect anomaly. 
+
+
+![image](https://user-images.githubusercontent.com/26426412/33541203-15e05484-d883-11e7-921d-ed10d4dab8c3.png)
+
+
+To perform anomaly detection:
 
 * Fit a gaussian model:
-First estimate the parameters ![image](https://user-images.githubusercontent.com/26426412/33541243-3f1b0b1e-d883-11e7-9da6-a2a35b695dec.png). ![image](https://user-images.githubusercontent.com/26426412/33541203-15e05484-d883-11e7-921d-ed10d4dab8c3.png)
 
-* Select the threshold
-The lower probability examples are more likely to be anomalies. To determine the anomaly needs to select a threshold based on a
+
+First estimate the parameters ![image](https://user-images.githubusercontent.com/26426412/33541243-3f1b0b1e-d883-11e7-9da6-a2a35b695dec.png). 
+* Select the threshold:
+
+
+The lower probability examples are more likely to be anomalies. To determine the anomaly, we need to select a threshold based on a
 cross validation set ![image](https://user-images.githubusercontent.com/26426412/33541548-642f3da2-d884-11e7-8642-df9961ae3353.png)
 The **selectThreshold.m** will return the selected threshold and F1 score which indicates how well the model is at finding the anomalies given a certain threshold. 
 
