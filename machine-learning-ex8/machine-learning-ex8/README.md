@@ -3,10 +3,13 @@
 ## Anomaly detection
 
 ## Recommendation Systems
-Recommendation system utilizes a collaborative filtering to predict movie ratings for movies that users have not rated. 
+Recommendation system utilizes a collaborative filtering to predict movie ratings for movies that users have not rated. "Collaborative filtering makes automatic predictions (filtering) about the interests of a user by collecting preferences information from many users (collaborating)."
 
 ### Movie ratings dataset 
-X and Theta are input parameters where i-th row of X corresponds to a feature vector x^(i) for the i-th movie and the j-th row of theta corresponds to one parameter vector for the j-th user.
+The input data is matrix Y which stores the ratings 1 to 5 with each element a rating from a user on a movie. The matrix R is a binary valued indicator matrix where R(i,j) = 1 means user j gives a rating on movie i and R(i,j) = 0 means user j gives no rating on movie i. 
+The purpose of collaborative filtering is to predict rating where R(i,j) = 0.
+
+X and Theta are the parameters to be learned. The i-th row of X corresponds to a feature vector x^(i) for the i-th movie and the j-th row of theta corresponds to one parameter vector for the j-th user. Both x^i and Θ^j are n-dimensional vectors. 
 ![image](https://user-images.githubusercontent.com/26426412/33538982-f9010142-d878-11e7-974f-7eb3b7145abc.png)
 
 ### Collaborative filtering learning algorithm
@@ -26,3 +29,4 @@ has the same size as Theta.
 
 ![image](https://user-images.githubusercontent.com/26426412/33539686-908333ca-d87c-11e7-8b44-04a09b922492.png)
 
+## References 
