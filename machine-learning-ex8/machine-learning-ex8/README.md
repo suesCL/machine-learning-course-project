@@ -18,7 +18,11 @@ First estimate the parameters ![image](https://user-images.githubusercontent.com
 
 The lower probability examples are more likely to be anomalies. To determine the anomaly, we need to select a threshold based on a
 cross validation set ![image](https://user-images.githubusercontent.com/26426412/33541548-642f3da2-d884-11e7-8642-df9961ae3353.png)
-The **selectThreshold.m** will return the selected threshold and F1 score which indicates how well the model is at finding the anomalies given a certain threshold. 
+The **selectThreshold.m** will take the probabilities of server to be anomalous p(x^i) and y^i as inputs and return the selected threshold and F1 score. F1 score indicates how well the model is at finding the anomalies given a certain threshold. 
+
+* Run anomaly detection
+With the selected threshold, each server can be categorized into normal or anomalous. 
+
 
 ## Recommendation Systems
 Recommendation system utilizes a collaborative filtering to predict movie ratings for movies that users have not rated. "Collaborative filtering makes automatic predictions (filtering) about the interests of a user by collecting preferences information from many users (collaborating)."
