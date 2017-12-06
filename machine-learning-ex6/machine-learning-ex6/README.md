@@ -23,6 +23,8 @@ One method to preprocess emails is to perform normalization which is to treat al
   5) Removal of non-words trimmed to a single space characters
 
 * Vocabulary list
+
+
 The vocabulary list chose all words that occur at least 100 times in the spam corpus. Some words are left out the vocabulary lsit because 
 they are rarely used and can overfit the model. Given the vocabulary list, we can replace each word in the email with a corresponding number as shown
 in file **processEmail.m**. 
