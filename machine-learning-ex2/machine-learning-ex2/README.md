@@ -27,7 +27,7 @@ plot(X(neg,1),X(neg,2),'ko','MarkerFaceColor','y','MarkerSize',7);
 
 * **Feature mapping:**
 
-Feature mapping is one technique that can help fit the data better by creating more features from each data point. As shown in the function below in **mapFeature.m**, it maps features into all polynomialls terms of x1, x2 up to sixth power. A logistic regression classifier with feature mapping creates a  more non-linear decisioin boundary and thus fit the data better.   
+Feature mapping is one technique that can help fit the data better by creating more features from each data point. As shown in the function below in mapFeature.m, it maps features into all polynomials terms of x1, x2 up to sixth power. A logistic regression classifier with feature mapping creates a more non-linear decision boundary and thus fit the data better.
 ```
 function out = mapFeature(X1, X2)
 %   MAPFEATURE(X1, X2) maps the two input features
@@ -80,7 +80,8 @@ The code uses **fminunc** to learn the optimal parameter theta.
 
 * **Plotting the decision boundary:**
 
-Plotting the decision boundary helps visualize the model learned by the classifier. The decision bounday seperates positve and negative samples. The file **plotDecisionBoundary.m** plots the decision boundary by first computing predictions and then drawing a contour plot of where predictions change from y=0 to y=1. The figure shown below displays decision boundary where lambda = 1.
+
+Plotting the decision boundary helps visualize the model learned by the classifier. The decision boundary separates positive and negative samples. The file plotDecisionBoundary.m plots the decision boundary by first computing predictions and then drawing a contour plot of where predictions change from y=0 to y=1. The figure shown below displays decision boundary where lambda = 1.
 
 ![](https://user-images.githubusercontent.com/26426412/31360122-cab9c06e-ad01-11e7-9b11-a7178a043b0a.png)
 
