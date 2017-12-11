@@ -4,7 +4,7 @@
 * Regularized logistic regression 
   * Visualizing the data
   * Feature mapping 
-  * Cost function and gradient descient 
+  * Cost function and gradient descent 
   * Plotting decision boundary 
   
 ## Regularized Logistic Regression 
